@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>The Father's Bank: A Tradition of Trust and Security</title>
+  </head>
+  <body>
+    <header>
+      <div class="container mx-auto">
+        <h1 class="mt-5 text-center text-5xl font-semibold">
+          WELCOME TO <span class="text-teal-500 uppercase">Father's Bank</span>
+        </h1>
+        <h1 class="mt-5 text-center text-2xl uppercase font-semibold">
+          Your Father's Bank:<span class="text-teal-500"> Investing in Your Future</span>
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="money-box container mx-auto">
+        <div
+          class="grid grid-cols-1 gap-10 px-10 py-20 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="h-52 rounded-lg border-2 border-gray-300 bg-indigo-500 text-white shadow-2xl shadow-black/40"
+          >
+            <div class="my-auto mt-20 flex justify-center">
+              <div>
+                <div class="text-4xl">DEPOSIT</div>
+                <div class="text-3xl font-bold tabular-nums" >$<span id="deposit-value">000</span></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-52 rounded-lg border-2 border-gray-300 bg-red-500 text-white shadow-2xl shadow-black/40"
+          >
+            <div class="my-auto mt-20 flex justify-center">
+              <div>
+                <div class="text-4xl">WITHDRAW</div>
+                <div class="text-3xl font-bold tabular-nums" >$<span id="widthdraw-value">000</span></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-52 rounded-lg border-2 border-gray-300 bg-fuchsia-500 text-white shadow-2xl shadow-black/40"
+          >
+            <div class="my-auto mt-20 flex justify-center">
+              <div>
+                <div class="text-4xl">TOTAL AMOUNT</div>
+
+                <div class="text-3xl font-bold tabular-nums" >$<span id="total-amount">000</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="deposit-box">
+        <div class="grid grid-cols-1 gap-10 p-10 md:grid-cols-2">
+          <div
+            class="h-96 rounded-2xl border-2 border-gray-200 bg-green-300 shadow-2xl shadow-green-300/50"
+          >
+            <div class="my-20 flex items-center justify-center">
+              <div>
+                <p class="p-5 text-2xl text-white">Enter Your Amount</p>
+                <input
+                id="deposit-inpt"
+                  type="number"
+                  min="0"
+                  value=""
+                  class="block border-2 border-black/5 bg-slate-100 p-5"
+                  placeholder="Deposit"
+                />
+                <button
+                id="deposit-btn"  class="my-4 rounded-full bg-green-500 px-10 py-3 font-bold text-white shadow-2xl shadow-white ring ring-green-600 hover:bg-green-400"
+                >
+                  Deposit
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="shadow-orange-300/shadow-green-300/50 h-96 rounded-2xl border-2 border-gray-200 bg-orange-300 shadow-2xl"
+          >
+            <div class="my-20 flex items-center justify-center">
+              <div>
+                <p class="p-5 text-2xl text-white">Enter Your Amount</p>
+                <input
+                id="widthdraw-inp"
+                  type="number"
+                  min="0"
+                  value=""
+                  class="block border-2 border-black/5 bg-slate-100 p-5"
+                  placeholder="Withdraw"
+                />
+                <button
+                 id="withdraw-btn" class="my-4 rounded-full bg-orange-400 px-10 py-3 font-bold text-white shadow-2xl shadow-white ring ring-orange-600 hover:bg-orange-300"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    
+<footer class="p-4 bg-white rounded-lg shadow  md:p-6">
+  <span class="text-md  text-gray-700 text-center ">© 2023 <a href="./index.html" class="hover:underline">BaperBank™</a>. All Rights Reserved. By Mahamudul Hasan Miyad
+  </span>
+
+</footer>
+
+    <!-- footer section -->
+    <!--  Javascript  Add Here  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
